@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.25.0@01a8eb06b9e9cc6cfb6a320bf9fb14331919d505">
+<files psalm-version="6.14.3@d0b040a91f280f071c1abcb1b77ce3822058725a">
+  <file src="src/ApiProblem.php">
+    <MixedAssignment>
+      <code><![CDATA[$prop]]></code>
+    </MixedAssignment>
+    <MixedReturnStatement>
+      <code><![CDATA[$this->problemStatusTitles[$this->status]]]></code>
+    </MixedReturnStatement>
+    <PossiblyInvalidPropertyAssignmentValue>
+      <code><![CDATA[$additional]]></code>
+    </PossiblyInvalidPropertyAssignmentValue>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__get]]></code>
+      <code><![CDATA[setDetailIncludesStackTrace]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/ApiProblemResponse.php">
+    <FalsableReturnStatement>
+      <code><![CDATA[json_encode($data, $encodingOptions | JSON_THROW_ON_ERROR)]]></code>
+    </FalsableReturnStatement>
+    <InvalidFalsableReturnType>
+      <code><![CDATA[string]]></code>
+    </InvalidFalsableReturnType>
+    <PossiblyFalseArgument>
+      <code><![CDATA[$json]]></code>
+    </PossiblyFalseArgument>
+    <UnusedClass>
+      <code><![CDATA[ApiProblemResponse]]></code>
+    </UnusedClass>
+  </file>
 </files>
