@@ -18,6 +18,7 @@ use const JSON_HEX_AMP;
 use const JSON_HEX_APOS;
 use const JSON_HEX_QUOT;
 use const JSON_HEX_TAG;
+use const JSON_PARTIAL_OUTPUT_ON_ERROR;
 use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
 
@@ -32,7 +33,8 @@ final class ApiProblemResponse extends Response
     | JSON_HEX_APOS
     | JSON_HEX_AMP
     | JSON_HEX_QUOT
-    | JSON_UNESCAPED_SLASHES;
+    | JSON_UNESCAPED_SLASHES
+    | JSON_PARTIAL_OUTPUT_ON_ERROR;
 
     public function __construct(ApiProblem $apiProblem)
     {

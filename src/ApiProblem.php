@@ -271,9 +271,6 @@ final class ApiProblem
             return get_class($this->detail);
         }
 
-        if (null === $this->title) {
-            return 'Unknown';
-        }
         return 'Unknown';
     }
 
